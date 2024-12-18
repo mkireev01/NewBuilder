@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лендинг из 5 экранов</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Хедер -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#hero">Главная</a></li>
+        <li><a href="#video-section"> Почему мы?</a></li>
+        <li><a href="#features"> Особенности </a></li>
+        <li><a href="#reviews">Отзывы</a></li>
+        <li><a href="#cont">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Заголовочный экран -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1> Мы предлагаем лучшие решения для вашего дома.</h1>
+    </div>
+  </section>
+
+  <!-- Уникальное торговое предложение -->
+<!-- Уникальное торговое предложение с видео -->
+<section class="video-section">
+  <h2>Посмотрите, как мы работаем</h2>
+  <p class="video-description">Короткий ролик о том, как происходит ремонт.</p>
+  
+  <div class="video-wrapper">
+    <video controls poster="images/video.jpg">
+      <source src="video/video.mp4" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+    </video>
+  </div>
+</section>
+
+  <!-- Экран с видео/каталогом/слоганом -->
+  <section id="features" class="features">
+    <div class="feature">
+      <img src="images/img.jpeg" alt="Feature 1">
+      <h3>Долгосрочный</h3>
+      <p>Долгое и надежное качество ремонта.</p>
+    </div>
+    <div class="feature">
+      <img src="images/img2.jpg" alt="Feature 2">
+      <h3>Качество</h3>
+      <p>Качественный ремонт, использование современных технологий.</p>
+    </div>
+    <div class="feature">
+      <img src="images/img3.jpg" alt="Feature 3">
+      <h3>Надежность</h3>
+      <p>Мы находимся на рынке более 10 лет!</p>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews">
+    <h2>Что говорят наши клиенты</h2>
+    <div class="reviews-container">
+      <div class="review-card">
+        <img src="images/photo1.jpg" alt="Иван Иванов" class="review-avatar">
+        <div class="review-text">
+          <p>"Отличный сервис! Очень доволен результатом."</p>
+          <strong>Вячеслав Резько</strong>
+        </div>
+      </div>
+      <div class="review-card">
+        <img src="images/ivan.jpg" alt="Ольга Петрова" class="review-avatar">
+        <div class="review-text">
+          <p>"Это было лучшее решение для моего бизнеса."</p>
+          <strong>Багрей Иван</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!-- Связаться -->
+<section id="contact" class="contact">
+  <h2>Готовы сделать заказ?</h2>
+  <p>Свяжитесь с нами и получите индивидуальную скидку на первый месяц подписки.</p>
+  <button class="contact-btn">Оставить заявку</button>
+</section>
+
+  <!-- Футер -->
+  <footer id="cont">
+    <span id="to-top" class="to-top" onclick="scrollToTop()">↑</span>
+    <p>&copy; 2024 Все права защищены.</p>
+    <p>Email: info@company.com | Телефон: +7 (999) 123-45-67</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
